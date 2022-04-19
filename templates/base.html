@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task List</h1>
+    <section>
+        <h2>Today</h2>
+        <ul class='today'>
+
+        </ul>
+    </section>
+    <section>
+        <h2>Soon</h2>
+        <ul class='soon'>
+
+        </ul>
+    </section>
+    <section>
+        <h2>Eventually</h2>
+        <ul class='eventually'>
+
+        </ul>
+    </section>
+    <section>
+        <h2>Calendar</h2>
+    </section>
+
+    <form action="/new-task" method="POST" id='new-task'>
+        <h2>Add Task</h2>
+        <label for='setTask'>New Task</label>
+        <input type="text" id='setTask' placeholder="Insert new task">
+        <label for='todayList'>Today</label>
+            <input type="radio" id='todayList' name='assign' value='today'>
+        <label for='soonList' >Soon</label>
+            <input type="radio" id='soonList' name='assign' value='soon'>
+        <label for='eventuallyList'>Eventually</label>
+            <input type="radio" id='eventuallyList' name='assign' value='eventually'>
+        <br>
+        <input type="submit" id='submitTask'>
+    </form>
+    <script src='static/app.js'></script>
+</body>
+</html>
